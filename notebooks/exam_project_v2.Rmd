@@ -335,10 +335,10 @@ actionhorrorscifi_by_year
 #question 7.2. Visualizing how genre "Action, Horror, Sci-fi" scored throughout the years based from imdb
 actionhorrorscifi_by_year %>%
   ggplot(aes(x=release_year, y = imdb_scores)) +
-   geom_bar(stat = 'identity', color="white", fill="pink") +
+   geom_bar(stat = 'identity', color="white", fill="blue") +
     xlab('release year') +
      ylab('imdb scores') +
-      ggtitle("How Horror, Sci-fi scored according to IMDB") +
+      ggtitle("How Action, Horror, Sci-fi scored according to IMDB") +
        theme(axis.text.x = element_text(angle = 90, size = 8))
 ```
 
@@ -346,7 +346,7 @@ actionhorrorscifi_by_year %>%
 #question 7.3. Visualizing how genre "Action, Horror, Sci-fi" scored throughout the years based from audience scores
 actionhorrorscifi_by_year %>%
   ggplot(aes(x=release_year, y = audience_score_rotten_tomatoes)) +
-   geom_bar(stat = 'identity', color="white", fill="pink") +
+   geom_bar(stat = 'identity', color="white", fill="blue") +
     xlab('release year') +
      ylab('audience scores') +
       ggtitle("How Action, Horror, Sci-fi scored according to Rotten Tomatoes") +
@@ -356,7 +356,7 @@ actionhorrorscifi_by_year %>%
 #question 7.4. Visualizing how genre "Action, Horror, Sci-fi" scored throughout the years based from critic scores
 actionhorrorscifi_by_year %>%
   ggplot(aes(x=release_year, y = critic_score_rotten_tomatoes)) +
-   geom_bar(stat = 'identity', color="white", fill="pink") +
+   geom_bar(stat = 'identity', color="white", fill="blue") +
     xlab('release year') +
      ylab('critic scores') +
       ggtitle("How Action, Horror, Sci-fi scored according to Rotten Tomatoes") +
@@ -405,7 +405,7 @@ action_by_year
 #question 8.2. Visualizing how genre "Action" scored throughout the years based from IMDb
 action_by_year %>%
   ggplot(aes(x=release_year, y = imdb_scores)) +
-   geom_bar(stat = 'identity', color="white", fill="pink") +
+   geom_bar(stat = 'identity', color="white", fill="green") +
     xlab('release year') +
      ylab('scores') +
       ggtitle("How Action scored according to IMDb") +
@@ -415,7 +415,7 @@ action_by_year %>%
 #question 8.3. Visualizing how genre "Action" scored throughout the years based from audience scores
 action_by_year %>%
   ggplot(aes(x=release_year, y = audience_score_rotten_tomatoes)) +
-   geom_bar(stat = 'identity', color="white", fill="pink") +
+   geom_bar(stat = 'identity', color="white", fill="green") +
     xlab('release year') +
      ylab('audience scores') +
       ggtitle("How Action scored according to Rotten Tomatoes") +
@@ -425,7 +425,7 @@ action_by_year %>%
 #question 8.4. Visualizing how genre "Action" scored throughout the years based from critic scores
 action_by_year %>%
   ggplot(aes(x=release_year, y = critic_score_rotten_tomatoes)) +
-   geom_bar(stat = 'identity', color="white", fill="pink") +
+   geom_bar(stat = 'identity', color="white", fill="green") +
     xlab('release year') +
      ylab('critic scores') +
       ggtitle("How Action scored according to Rotten Tomatoes") +
